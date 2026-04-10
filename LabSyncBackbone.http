@@ -1,0 +1,20 @@
+@LabSyncBackbone_HostAddress = http://localhost:5174
+
+GET {{LabSyncBackbone_HostAddress}}/health
+Accept: application/json
+
+###
+
+POST {{LabSyncBackbone_HostAddress}}/sync/send
+Content-Type: application/json
+
+{
+  "localAppName": "BABAZAR",
+  "recordId": "BOMBOS",
+  "payload": {
+    "customerName": "Ali",
+    "customerCode": "C100",
+    "amount": 250.75,
+    "notes": "Test order"
+  }
+}

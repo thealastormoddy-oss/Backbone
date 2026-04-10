@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../LabSyncBackbone.Tests/LabSyncBackbone.Tests.csproj" />
+  <Project Path="LabSyncBackbone.csproj" />
+</Solution>
